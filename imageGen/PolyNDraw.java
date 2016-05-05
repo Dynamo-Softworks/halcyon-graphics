@@ -9,12 +9,9 @@ public class PolyNDraw {
 	static Random rand = new Random();
 	public static BufferedImage drawPoly(int num, BufferedImage img, int color, int radius){
 		if(num == 0){
-			double coEf1 =  ((Math.pow(-1,rand.nextInt(1) + 1)) * rand.nextDouble()); 
-			double coEf2 =  ((Math.pow(-1,rand.nextInt(1) + 1)) * rand.nextDouble());
-			double cVal =  ((Math.pow(-1,rand.nextInt(1) + 1)) * rand.nextInt(3));
+			int cVal = rand.nextInt(Settings.imgHeight);
 			for(int x = 0; x < Settings.imgWidth; x++){
-				//int y = (int) ( coEf1 * Math.pow(x, 2) +  coEf2 * x + cVal); 
-				int y = (int) (100*Math.sin(x) + 300);
+				int y = (int) (100*Math.sin(x) + cVal);
 				if(y < Settings.imgHeight && y >= 0){
 					for(int locX = 0; locX < radius * Math.cos(x); locX++){
 						for(int locY = 0; locY < radius * Math.cos(y); locY++){
