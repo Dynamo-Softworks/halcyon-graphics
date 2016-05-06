@@ -56,8 +56,10 @@ public class Shapes{
 				int outside=(0-elementSize);
 				while(outside<elementSize){
 					while(inside<elementSize){
+						x=x+(int)(inside*Math.cos(x));
+						y=y+(int)(outside*Math.sin(y));
 						if(x<ref.Settings.imgWidth && x>0 && y<ref.Settings.imgHeight && y>0){
-							img.setRGB(x+(int)(inside*Math.cos(x)), y+(int)(outside*Math.sin(y)), color);
+							img.setRGB(x, y, color);
 						}
 						inside++;
 					}
