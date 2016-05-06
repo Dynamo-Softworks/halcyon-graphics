@@ -14,9 +14,12 @@ public class Generator {
 	Random rand = new Random();
 	public BufferedImage generateImg(){
 		BufferedImage img = new BufferedImage(Settings.imgWidth, Settings.imgHeight, BufferedImage.TYPE_INT_ARGB);
-		drawSolidBackground(img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255));
+		//drawSolidBackground(img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255));
+		randRainbow(img);
 		img = PolyNDraw.drawPoly(0, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
 		img = PolyNDraw.drawPoly(2, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
+		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
+		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
 		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
 		saveImg(img);
 		return img;
@@ -39,6 +42,40 @@ public class Generator {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	private BufferedImage randRainbow(BufferedImage img){
+		int rStart = rand.nextInt(256);
+		int rando = rand.nextInt(3);
+		System.out.println("Okay");
+		int gStart = rand.nextInt(256);
+		int bStart = rand.nextInt(256);
+		for(int x = 0; x < Settings.imgWidth; x++){
+			for(int y = 0; y < Settings.imgHeight; y++){
+				
+					if (x%10 ==0) {
+						if (rando == 0) {
+							if (rStart >= 250) {
+								rStart = 0;
+							}
+							rStart++;
+
+						} else if (rando == 1) {
+							if (gStart >= 250) {
+								gStart = 0;
+							}
+							gStart++;
+						} else {
+							if (bStart >= 250) {
+								bStart = 0;
+							}
+							bStart++;
+						} 
+					}
+				img.setRGB(x, y, new Color(rStart, gStart, bStart, 255).getRGB());
+			}
+		}
+		return img;
 	}
 
 }
