@@ -1,10 +1,8 @@
 package imageGen;
 
-import java.awt.image.BufferedImage;
 import java.awt.Color;
+import java.awt.image.BufferedImage;
 import java.util.Random;
-
-import ref.Settings;
 
 public class Shapes{
 	//img, select, base/radius, base/thickness, base/color, base/arclength, base/arclengthEnd, base/x, base/y, base/element 

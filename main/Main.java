@@ -1,7 +1,6 @@
 package main;
 
 import imageGen.Generator;
-import ref.Settings;
 
 public class Main {
 	public static Generator gen;
