@@ -1,6 +1,5 @@
 package main;
 
-import graphicalUI.GUIMAIN;
 import imageGen.Generator;
 import ref.Settings;
 
