@@ -51,9 +51,9 @@ public class GUIMAIN implements ActionListener{
 			for(int x= 0; x < (int)(imagesGen.getValue()); x++){
 				try{
 					Main.gen.generateImg();
-				}
-				catch(java.lang.IllegalArgumentException e){
-	
+				}catch(Exception e){
+					x--;
+					System.out.print("Ouch");
 				}
 			}
 			long endTime = System.currentTimeMillis();
