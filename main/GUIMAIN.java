@@ -87,7 +87,7 @@ public class GUIMAIN implements ActionListener{
 			}
 			long endTime = System.currentTimeMillis();
 			int differ = (int) (endTime - startTime) /1000;
-			System.out.print(differ);
+			//System.out.print(differ);
 			int min = (int) (differ/60);
 			int seconds = differ%60;
 			time.setText(min +":" +seconds);

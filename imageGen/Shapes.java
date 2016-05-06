@@ -12,27 +12,27 @@ public class Shapes{
 		/**TODO: Figure out what elements of these equations must be positive!**/
 		switch(equationSelect){
 		case 0:
-			img=drawNebula((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img, new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+elementBase));
+			img=drawNebula((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img, new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+elementBase));
 		case 1:
-			img=drawCircle((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+Math.abs(elementBase)));
+			img=drawCircle((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+Math.abs(elementBase)));
 		case 2:
-			img=drawNoodles((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+elementBase));
+			img=drawNoodles((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+elementBase));
 		case 3:
-			img=drawNoodlesBeta((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(arclengthEndRange)+arclengthEndBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+Math.abs(elementBase)));
+			img=drawNoodlesBeta((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(arclengthEndRange+1)+arclengthEndBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+Math.abs(elementBase)));
 		case 4:
-			img=drawPolarAlpha((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+elementBase));
+			img=drawPolarAlpha((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+elementBase));
 		case 5:
-			img=drawPolarBeta((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+elementBase));
+			img=drawPolarBeta((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+elementBase));
 		case 6:
-			img=drawPolarEpsilon((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+Math.abs(elementBase)));
+			img=drawPolarEpsilon((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+Math.abs(elementBase)));
 		case 7:
-			img=drawPolarGamma((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+elementBase));
+			img=drawPolarGamma((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+elementBase));
 		case 8:
-			img=drawPolarGraphX((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+elementBase));
+			img=drawPolarGraphX((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+elementBase));
 		case 9:
-			img=drawNebulaBeta((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+Math.abs(elementBase)));
+			img=drawNebulaBeta((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+Math.abs(elementBase)));
 		case 10:
-			img=drawNebulaGamma((rand.nextInt(radiusRange)+radiusBase), (rand.nextInt(thicknessRange)+thicknessBase), img,  new Color((rand.nextInt(colorRange1)+colorBase1), (rand.nextInt(colorRange2)+colorBase2), (rand.nextInt(colorRange3)+colorBase3), (rand.nextInt(colorRange4)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange)+arclengthBase), (rand.nextInt(xRange)+xBase), (rand.nextInt(yRange)+yBase), (rand.nextInt(elementRange)+Math.abs(elementBase)));			
+			img=drawNebulaGamma((rand.nextInt(radiusRange+1)+radiusBase), (rand.nextInt(thicknessRange+1)+thicknessBase), img,  new Color((rand.nextInt(colorRange1+1)+colorBase1), (rand.nextInt(colorRange2+1)+colorBase2), (rand.nextInt(colorRange3+1)+colorBase3), (rand.nextInt(colorRange4+1)+colorBase4)).getRGB(), (rand.nextInt(arclengthRange+1)+arclengthBase), (rand.nextInt(xRange+1)+xBase), (rand.nextInt(yRange+1)+yBase), (rand.nextInt(elementRange+1)+Math.abs(elementBase)));			
 		}
 		return img;
 		
@@ -176,8 +176,8 @@ public class Shapes{
 					img.setRGB(x, y, color);
 				}
 				else{
-					System.out.println(x);
-					System.out.println(y);
+					//System.out.println(x);
+					//System.out.println(y);
 				}
 				theta++;
 			}
@@ -201,8 +201,8 @@ public class Shapes{
 					img.setRGB(x, y, color);
 				}
 				else{
-					System.out.println(x);
-					System.out.println(y);
+					//System.out.println(x);
+					//System.out.println(y);
 				}
 				theta++;
 			}
@@ -227,8 +227,8 @@ public class Shapes{
 					img.setRGB(x, y, color);
 				}
 				else{
-					System.out.println(x);
-					System.out.println(y);
+					//System.out.println(x);
+					//System.out.println(y);
 				}
 				theta++;
 			}
@@ -254,8 +254,8 @@ public class Shapes{
 					img.setRGB(x, y, color);
 				}
 				else{
-					System.out.println(x);
-					System.out.println(y);
+					//System.out.println(x);
+					//System.out.println(y);
 				}
 				theta++;
 			}
@@ -281,8 +281,8 @@ public static BufferedImage drawPolarGraphX(int radius, int thickness, BufferedI
 				img.setRGB(x, y, color);
 			}
 			else{
-				System.out.println(x);
-				System.out.println(y);
+				//System.out.println(x);
+				//System.out.println(y);
 			}
 			theta++;
 		}
