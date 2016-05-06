@@ -47,7 +47,14 @@ public class GUIMAIN implements ActionListener{
 		if(arg0.getSource().equals(generateRandButton)){
 			long startTime = System.currentTimeMillis();
 			for(int x= 0; x < (int)(imagesGen.getValue()); x++){
-				Main.gen.generateImg();
+				
+				try{
+					Main.gen.generateImg();
+				}catch(Exception e){
+					x--;
+					System.out.print("Ouch");
+				}
+				
 			}
 			long endTime = System.currentTimeMillis();
 			int differ = (int) (endTime - startTime) /1000;
