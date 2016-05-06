@@ -16,14 +16,16 @@ public class Generator {
 		BufferedImage img = new BufferedImage(Settings.imgWidth, Settings.imgHeight, BufferedImage.TYPE_INT_ARGB);
 		drawSolidBackground(img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255));
 		//randRainbow(img);
-		//img = PolyNDraw.drawPoly(0, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
-		//img = PolyNDraw.drawPoly(2, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
+		img = Shapes.drawPolarGraphX(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20)-10);
+		img = Shapes.drawPolarGamma(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20)-10);
+		img = Shapes.drawNoodles(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20));
+		img = PolyNDraw.drawPoly(0, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
+		img = PolyNDraw.drawPoly(2, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
+		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
+		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
+		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
 		
-		//img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
-		//img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
-		//img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
 		
-		img = Shapes.drawPolarAlpha(100, 100, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 360, 500, 400, 1);
 		saveImg(img);
 		return img;
 	}
