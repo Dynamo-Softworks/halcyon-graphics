@@ -48,6 +48,46 @@ public class PolyNDraw {
 				}
 			}
 			return img;
+		}else if(num == 1){
+			int bWid = rand.nextInt(Settings.imgWidth/8);
+			int bHei = rand.nextInt(Settings.imgHeight/8);
+			int xStart = rand.nextInt(Settings.imgWidth);
+			int yStart = rand.nextInt(Settings.imgHeight);
+			
+			for(int x = xStart; x < bWid + xStart; x++){
+				if( x < Settings.imgWidth){
+					img.setRGB(x, yStart, color);
+					if(yStart + bHei < Settings.imgHeight){
+						img.setRGB(x, yStart + bHei, color);
+					}
+				}
+				
+			}
+			for(int y = yStart; y < (yStart + bHei); y++){
+				if(y < Settings.imgHeight){
+					img.setRGB(xStart, y, color);
+					if(bWid + xStart < Settings.imgWidth){
+						img.setRGB(xStart + bWid, y, color);
+					}
+				}
+			}
+			if((xStart + bWid/2) < Settings.imgWidth && (yStart + bHei/2) < Settings.imgHeight){
+							img.setRGB((xStart + bWid/2), (yStart + bHei/2), color);
+			}
+			
+			if(xStart + bWid/2 < Settings.imgWidth){
+				for(int y = 0; y < Settings.imgHeight; y++){
+					img.setRGB(xStart + bWid/2, y, color);
+				}
+			}
+			
+			if(yStart + bHei/2 < Settings.imgHeight){
+				for(int x = 0; x < Settings.imgWidth; x++){
+					img.setRGB(x, yStart + bHei/2, color);
+				}
+			}
+
+			return img;
 		}else{
 			return img;
 		}

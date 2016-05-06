@@ -16,6 +16,7 @@ public class Generator {
 		BufferedImage img = new BufferedImage(Settings.imgWidth, Settings.imgHeight, BufferedImage.TYPE_INT_ARGB);
 		drawSolidBackground(img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255));
 		img = PolyNDraw.drawPoly(0, img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), 10);
+		img = PolyNDraw.drawPoly(1, img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255).getRGB(), 100);
 		
 		saveImg(img);
 		return img;
