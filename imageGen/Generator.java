@@ -15,13 +15,12 @@ public class Generator {
 	public BufferedImage generateImg(){
 		BufferedImage img = new BufferedImage(Settings.imgWidth, Settings.imgHeight, BufferedImage.TYPE_INT_ARGB);
 		drawSolidBackground(img, new Color(rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255));
-		//randRainbow(img);
-		img = Shapes.wrapper(img, 10, /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20), /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 1, rand.nextInt(Settings.imgWidth),/*y*/ 1, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(20));
-		img = Shapes.wrapper(img, 9, /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20), /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 1, rand.nextInt(Settings.imgWidth),/*y*/ 1, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(20));
-		img = Shapes.drawPolarGraphX(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20)-10);
-		img = Shapes.drawPolarGamma(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20)-10);
-		img = Shapes.drawNoodles(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20));
-		img = Shapes.drawNoodles(rand.nextInt(256), rand.nextInt(256), img, new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256), 255).getRGB(), rand.nextInt(1000)+360, rand.nextInt(ref.Settings.imgWidth), rand.nextInt(ref.Settings.imgHeight),rand.nextInt(20));
+		//randbow(img);
+		img = Shapes.wrapper(img, rand.nextInt(10), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20), /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 1, rand.nextInt(Settings.imgWidth),/*y*/ 1, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(20));
+		img = Shapes.wrapper(img, rand.nextInt(10), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20), /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 1, rand.nextInt(Settings.imgWidth),/*y*/ 1, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(20));
+		img = Shapes.wrapper(img, rand.nextInt(10), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20),  /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 0, rand.nextInt(Settings.imgWidth),/*y*/ 0, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(5));
+		img = Shapes.wrapper(img, rand.nextInt(10), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20),  /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 0, rand.nextInt(Settings.imgWidth),/*y*/ 0, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(5));
+		img = Shapes.wrapper(img, rand.nextInt(10), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20),  /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 0, rand.nextInt(Settings.imgWidth),/*y*/ 0, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(5));
 		img = Shapes.wrapper(img, rand.nextInt(7), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20),  /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 0, rand.nextInt(Settings.imgWidth),/*y*/ 0, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(5));
 		img = Shapes.wrapper(img, rand.nextInt(7), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20),  /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 0, rand.nextInt(Settings.imgWidth),/*y*/ 0, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(5));
 		img = Shapes.wrapper(img, rand.nextInt(7), /*radius*/10, rand.nextInt(100), /*thickness*/ 1, rand.nextInt(20),  /*color*/ 1,1,1,0, rand.nextInt(256),rand.nextInt(256),rand.nextInt(256),255, /*arclength*/ 180, rand.nextInt(1000), /*arclengthEnd*/ 360, rand.nextInt(1000),/*x*/ 0, rand.nextInt(Settings.imgWidth),/*y*/ 0, rand.nextInt(Settings.imgHeight),/*element*/ 1, rand.nextInt(5));
@@ -55,11 +54,11 @@ public class Generator {
 			e.printStackTrace();
 		}
 	}
-	
-	private BufferedImage randRainbow(BufferedImage img){
+	//See what I did there. rand Rainbow -> randbow??? LOL
+	private BufferedImage randbow(BufferedImage img){
 		int rStart = rand.nextInt(256);
 		int rando = rand.nextInt(3);
-		System.out.println("Okay");
+		//System.out.println("Okay"); /*I see you...*/
 		int gStart = rand.nextInt(256);
 		int bStart = rand.nextInt(256);
 		for(int x = 0; x < Settings.imgWidth; x++){
