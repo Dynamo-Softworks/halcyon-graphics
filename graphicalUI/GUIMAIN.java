@@ -23,7 +23,7 @@ public class GUIMAIN implements ActionListener{
 	private SpinnerModel model;
 	private JTextField time;
 	public void createUI(){
-		frame = new JFrame("Halycon Wallpaper Conjurer");
+		frame = new JFrame("Halcyon Wallpaper Conjurer");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		info1 = new JLabel("Click this button to generate some Images");
 		info1.setText("Generate Images");
